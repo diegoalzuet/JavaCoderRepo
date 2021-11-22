@@ -1,0 +1,6 @@
+#Ignora las siguientes carpetas
+.settings
+bin
+
+.classpath
+.project
