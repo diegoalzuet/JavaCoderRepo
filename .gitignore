@@ -1,6 +1,6 @@
 #Ignora las siguientes carpetas
-.settings
+/.settings
 bin
 
-.classpath
-.project
+/.classpath
+/.project
