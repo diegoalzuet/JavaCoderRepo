@@ -1,13 +1,20 @@
+import java.time.Clock;
+import java.time.ZoneId;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import clases.Continente;
 import clases.Pais;
-import log.Message;
 
 public class Principal {
 
 	public static void main(String[] args) {
+		
+		Clock reloj = Clock.systemDefaultZone();
+		
+		System.out.println("INICIO EJECUCION: "+ reloj.instant().atZone(ZoneId.of("America/Argentina/Buenos_Aires")));
+		System.out.println();
+
 		Continente sudamerica = new Continente("Sudamerica");
 		Pais argentina = new Pais(1, "Argentina", 54);
 		Pais brasil = new Pais(2,"Brasil",55);
@@ -38,13 +45,11 @@ public class Principal {
 			System.out.println(sudamerica.buscarPaisPorCodigo(codigoPais));
 			
 		}catch (InputMismatchException e) {
-			Message logger = new Message();
-			logger.getLogFata("Debe ingresar tipo Numerico");			
-		}		
+			System.out.println("Debe ingresar un numero. Fin del programa");			
+		}
 		finally {
-			System.out.println("Fin");
+			System.out.println("FIN EJECUCION: "+ reloj.instant().atZone(ZoneId.of("America/Argentina/Buenos_Aires")));
 			lector.close();
 		}
 	}
-
 }

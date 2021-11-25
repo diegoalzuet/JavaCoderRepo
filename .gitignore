@@ -1,6 +1,8 @@
 #Ignora las siguientes carpetas
-/.settings
+.settings
 bin
+target
 
-/.classpath
-/.project
+.classpath
+.project
+/.metadata/
