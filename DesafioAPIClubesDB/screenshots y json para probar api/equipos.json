@@ -1,0 +1,73 @@
+[
+	{    
+		"nombre": "River Plate",
+		"apodo": "El Millonario",
+		"nroSocios": 100336,
+		"titulosNaciones": 50,
+		"titulosInternacionales": 18,
+		"estadio": {
+		   
+			"nombre": "Estadio Monumental",
+			"capacidad": 72054,
+			"techado": false
+		},
+		"entrenador": "Marcelo Gallardo"
+	},
+	{
+		"nombre": "Boca Juniors",
+		"apodo": "Ex Club",
+		"nroSocios": 238000,
+		"titulosNaciones": 48,
+		"titulosInternacionales": 22,
+		"estadio": {
+		   
+			"nombre": "La Bombonera",
+			"capacidad": 54000,
+			"techado": false
+		},
+		"entrenador": "Sebastian Bataglia"
+	},
+	{
+		"nombre": "San Lorenzo",
+		"apodo": "Cuervo",
+		"nroSocios": 57386,
+		"titulosNaciones": 17,
+		"titulosInternacionales": 5,
+		"estadio": {
+		   
+			"nombre": "El nuevo gasometro",
+			"capacidad": 47964,
+			"techado": false
+		},
+		"entrenador": "Diego Monarriz"
+	},
+	{
+		"nombre": "Independiente",
+		"apodo": "Rojo",
+		"nroSocios": 85962,
+		"titulosNaciones": 25,
+		"titulosInternacionales": 20,
+		"estadio": {
+		   
+			"nombre": "Libertadores de America Ricardo Bochini",
+			"capacidad": 49592 ,
+			"techado": false
+		},
+		"entrenador": "Julio Cesar Falcioni"
+	},
+	{
+		"nombre": "Racing",
+		"apodo": "La Academia",
+		"nroSocios": 74565,
+		"titulosNaciones": 25,
+		"titulosInternacionales": 20,
+		"estadio": {
+		   
+			"nombre": "Presidente Peron - El Cilindro",
+			"capacidad": 55000 ,
+			"techado": false
+		},
+		"entrenador": "Fernando Gago"
+	}
+	
+]
