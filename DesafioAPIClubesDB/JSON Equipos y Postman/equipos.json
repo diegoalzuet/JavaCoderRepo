@@ -1,0 +1,142 @@
+[
+	{
+		"nombre": "Club Atletico River Plate",
+		"apodo": "El Mas Grande",
+		"pais": "Argentina",
+		"nroSocios": 100336,
+		"titulosNacionales": 51,
+		"titulosInternacionales": 18,
+		"estadio": {
+			"nombre": "Antonio Vespucio Liberti - El Monumental",
+			"capacidad": 72054,
+			"techado": false
+		},
+		"entrenador": "Marcelo Daniel Gallardo"
+	},
+	{
+		"nombre": "Club Atlético Boca Juniors",
+		"apodo": "Xeneize",
+		"pais": "Argentina",
+		"nroSocios": 213318,
+		"titulosNacionales": 49,
+		"titulosInternacionales": 22,
+		"estadio": {
+			"nombre": "Alberto J Armando - La Bombonera",
+			"capacidad": 54000,
+			"techado": false
+		},
+		"entrenador": "Sebastian Bataglia"
+	},
+	{
+		"nombre": "San Lorenzo",
+		"apodo": "Cuervo",
+		"pais": "Argentina",
+		"nroSocios": 57386,
+		"titulosNacionales": 17,
+		"titulosInternacionales": 5,
+		"estadio": {
+			"nombre": "El nuevo gasometro",
+			"capacidad": 47964,
+			"techado": false
+		},
+		"entrenador": "Diego Monarriz"
+	},
+	{
+		"nombre": "Independiente",
+		"apodo": "Rojo",
+		"pais": "Argentina",
+		"nroSocios": 85962,
+		"titulosNacionales": 25,
+		"titulosInternacionales": 20,
+		"estadio": {
+			"nombre": "Libertadores de America Ricardo Bochini",
+			"capacidad": 49592,
+			"techado": false
+		},
+		"entrenador": "Julio Cesar Falcioni"
+	},
+	{
+		"nombre": "Racing",
+		"apodo": "La Academia",
+		"pais": "Argentina",
+		"nroSocios": 74565,
+		"titulosNacionales": 25,
+		"titulosInternacionales": 20,
+		"estadio": {
+			"nombre": "Presidente Peron - El Cilindro",
+			"capacidad": 55000,
+			"techado": false
+		},
+		"entrenador": "Fernando Gago"
+	},
+	{
+		"nombre": "Fútbol Club Barcelona",
+		"apodo": "Blaugranas",
+		"pais": "España",
+		"nroSocios": 141846,
+		"titulosNacionales": 75,
+		"titulosInternacionales": 22,
+		"estadio": {
+			"nombre": "Camp Nou",
+			"capacidad": 99354,
+			"techado": false
+		},
+		"entrenador": "Xavi Hernández"
+	},
+	{
+		"nombre": "Real Madrid Club de Fútbol",
+		"apodo": "Merengues",
+		"pais": "España",
+		"nroSocios": 93920,
+		"titulosNacionales": 66,
+		"titulosInternacionales": 29,
+		"estadio": {
+			"nombre": "Santiago Bernabéu",
+			"capacidad": 81044,
+			"techado": false
+		},
+		"entrenador": "Carlo Ancelotti"
+	},
+	{
+		"nombre": "Club Atlético de Madrid",
+		"apodo": "Colchoneros",
+		"pais": "España",
+		"nroSocios": 87920,
+		"titulosNacionales": 25,
+		"titulosInternacionales": 8,
+		"estadio": {
+			"nombre": "Estadio Metropolitano",
+			"capacidad": 68456,
+			"techado": true
+		},
+		"entrenador": "Diego Simeone"
+	},
+	{
+		"nombre": "Football Club Internazionale Milano",
+		"apodo": "I Nerazzurri",
+		"pais": "Italia",
+		"nroSocios": 82920,
+		"titulosNacionales": 31,
+		"titulosInternacionales": 9,
+		"estadio": {
+			"nombre": "Giuseppe Meazza",
+			"capacidad": 80018,
+			"techado": true
+		},
+		"entrenador": "Simone Inzaghi"
+	},
+	{
+		"nombre": "Club Internacional de Fútbol Miami",
+		"apodo": "The Herons",
+		"pais": "Estados Unidos",
+		"nroSocios": 82920,
+		"titulosNacionales": 0,
+		"titulosInternacionales": 0,
+		"estadio": {
+			"nombre": "DRV PNK Stadium",
+			"capacidad": 18000,
+			"techado": false
+		},
+		"entrenador": "Phil Neville"
+	}
+]
