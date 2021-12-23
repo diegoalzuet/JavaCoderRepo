@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "9285aa3e-a919-4a57-9d11-5531aeaf07f2",
+		"name": "apiClubes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/apiClub/v1/getClubes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/getClubes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"getClubes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/getClubById/60",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/getClubById/60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"getClubById",
+						"60"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/addClub",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/addClub",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"addClub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/updateClub",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n        \"nombre\": \"el que murio en madrid\",\r\n        \"apodo\": \"Ex Club\",\r\n        \"nroSocios\": 900000,\r\n        \"titulosNaciones\": 50,\r\n        \"titulosInternacionales\": 18,\r\n        \"estadio\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Bombonera\",\r\n            \"capacidad\": 50000,\r\n            \"techado\": false\r\n        },\r\n        \"entrenador\": \"Bataglia\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/updateClub",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"updateClub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/deleteClub/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/deleteClub/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"deleteClub",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/Top3TitulosNacionales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/Top3TitulosNacionales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"Top3TitulosNacionales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/Top3TitulosInternacionales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/Top3TitulosInternacionales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"Top3TitulosInternacionales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/Top3MasTitulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/Top3MasTitulos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"Top3MasTitulos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiClub/v1/filterByPais/argentina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/apiClub/v1/filterByPais/argentina",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiClub",
+						"v1",
+						"filterByPais",
+						"argentina"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

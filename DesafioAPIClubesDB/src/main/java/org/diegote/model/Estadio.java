@@ -14,10 +14,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-public class Estadio implements Serializable{
+public class Estadio implements Serializable{	
 	
-	
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false,updatable = false)
 	@Id
 	private Integer id;

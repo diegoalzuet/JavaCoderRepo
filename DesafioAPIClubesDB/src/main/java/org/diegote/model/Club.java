@@ -11,22 +11,27 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@JsonIgnoreProperties(value={"hibernateLazyInitializer","handler","fieldHandler"})
+
 public class Club implements Serializable {
 
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false, updatable = false)
 	@Id
 	private Integer id;
 	private String nombre;
 	private String apodo;
+	private String pais;
 	private Integer nroSocios;
-	private Integer titulosNaciones;
+	private Integer titulosNacionales;
 	private Integer titulosInternacionales;
 
 	@JoinColumn(name = "estadio_id", unique = true)
@@ -37,13 +42,13 @@ public class Club implements Serializable {
 	public Club() {
 	}
 
-	public Club(Integer id, String nombre, String apodo, Integer nroSocios, Integer titulosNaciones,
+	public Club(Integer id, String nombre, String apodo, Integer nroSocios, Integer titulosNacionales,
 			Integer titulosInternacionales, Estadio estadio, String entrenador) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apodo = apodo;
 		this.nroSocios = nroSocios;
-		this.titulosNaciones = titulosNaciones;
+		this.titulosNacionales = titulosNacionales;
 		this.titulosInternacionales = titulosInternacionales;
 		this.estadio = estadio;
 		this.entrenador = entrenador;
@@ -81,12 +86,12 @@ public class Club implements Serializable {
 		this.nroSocios = nroSocios;
 	}
 
-	public Integer getTitulosNaciones() {
-		return titulosNaciones;
+	public Integer getTitulosNacionales() {
+		return titulosNacionales;
 	}
 
-	public void setTitulosNaciones(Integer titulosNaciones) {
-		this.titulosNaciones = titulosNaciones;
+	public void setTitulosNacionales(Integer titulosNacionales) {
+		this.titulosNacionales = titulosNacionales;
 	}
 
 	public Integer getTitulosInternacionales() {
@@ -113,11 +118,19 @@ public class Club implements Serializable {
 		this.entrenador = entrenador;
 	}
 
+	public String getPais() {
+		return pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+
 	@Override
 	public String toString() {
-		return "Club [id=" + id + ", nombre=" + nombre + ", apodo=" + apodo + ", nroSocios=" + nroSocios
-				+ ", titulosNaciones=" + titulosNaciones + ", titulosInternacionales=" + titulosInternacionales
-				+ ", entrenador=" + entrenador + "]";
-	}
+		return "Club [id=" + id + ", nombre=" + nombre + ", apodo=" + apodo + ", pais=" + pais + ", nroSocios="
+				+ nroSocios + ", titulosNacionales=" + titulosNacionales + ", titulosInternacionales="
+				+ titulosInternacionales + ", estadio=" + estadio + ", entrenador=" + entrenador + "]";
+	}	
 
 }

@@ -1,17 +1,14 @@
 package org.diegote.service;
 
 import java.util.List;
-import java.util.Optional;
 
+import org.diegote.exception.ClubException;
 import org.diegote.model.Club;
-import org.diegote.model.Estadio;
 import org.diegote.repository.IClubRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Service
 public class ClubService {
@@ -28,17 +25,51 @@ public class ClubService {
 	}
 
 	public Club addClub(Club club) {
-		System.out.println(club);
 		return clubRepository.save(club);
 	}
 
-	public void deleteClub(@PathVariable Integer id) {
-		clubRepository.deleteById(id);
+	public void deleteClub(@PathVariable Integer id) throws ClubException {
+		if (clubRepository.existsById(id))
+			clubRepository.deleteById(id);
+		else
+			throw new ClubException("No existe el club con id: " + id);
 	}
 
-	public Club updateClub(Club club) {
-		return clubRepository.save(club);
+	public Club updateClub(Club club) throws ClubException {
+		if(club.getId()==null)
+			throw new ClubException("El ID del Club no puede ser nulo. Agregar al Body el ID del Club");
+		
+		if (clubRepository.existsById(club.getId()))
+			return clubRepository.save(club);
+		else
+			throw new ClubException("No existe el club con id: " + club.getId());
+	}
 
+	public Club getClubById(Integer id) throws ClubException {
+		if (clubRepository.existsById(id))
+			return clubRepository.getById(id);
+		else
+			throw new ClubException("No existe el club con el id: " + id);
+	}
+
+	public List<Club> getClubByName(String nombre) {
+		return clubRepository.findByNombre(nombre);
+	}
+
+	public List<Club> filterTop3TitulosNacionales() {
+		return clubRepository.filterTop3TitulosNacionales(PageRequest.of(0, 3));
+	}
+
+	public List<Club> filterTop3TitulosInternacionales() {
+		return clubRepository.filterTop3TitulosInternacionales(PageRequest.of(0, 3));
+	}
+
+	public List<Club> filterByPais(String pais) {
+		return clubRepository.filterByPais(pais);
+	}
+
+	public List<Club> filterByMasTitulos() {
+		return clubRepository.filterTop3MasTitulos(PageRequest.of(0, 3));
 	}
 
 }
